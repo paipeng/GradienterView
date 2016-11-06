@@ -10,6 +10,7 @@
 		73D4B8711DCF0CA500FB7D01 /* GradienterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D4B8671DCF0CA500FB7D01 /* GradienterView.framework */; };
 		73D4B8761DCF0CA500FB7D01 /* GradienterViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D4B8751DCF0CA500FB7D01 /* GradienterViewTests.m */; };
 		73D4B8781DCF0CA500FB7D01 /* GradienterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 73D4B86A1DCF0CA500FB7D01 /* GradienterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73D4B8821DCF0CEE00FB7D01 /* GradienterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D4B8811DCF0CEE00FB7D01 /* GradienterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		73D4B8701DCF0CA500FB7D01 /* GradienterViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradienterViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D4B8751DCF0CA500FB7D01 /* GradienterViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradienterViewTests.m; sourceTree = "<group>"; };
 		73D4B8771DCF0CA500FB7D01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D4B8811DCF0CEE00FB7D01 /* GradienterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradienterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		73D4B8691DCF0CA500FB7D01 /* GradienterView */ = {
 			isa = PBXGroup;
 			children = (
+				73D4B8811DCF0CEE00FB7D01 /* GradienterView.m */,
 				73D4B86A1DCF0CA500FB7D01 /* GradienterView.h */,
 				73D4B86B1DCF0CA500FB7D01 /* Info.plist */,
 			);
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					73D4B8661DCF0CA500FB7D01 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7SKZP3W4L7;
 						ProvisioningStyle = Automatic;
 					};
 					73D4B86F1DCF0CA500FB7D01 = {
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73D4B8821DCF0CEE00FB7D01 /* GradienterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,12 +322,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7SKZP3W4L7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GradienterView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paipeng.GradienterView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,11 +343,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7SKZP3W4L7;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = GradienterView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paipeng.GradienterView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +396,7 @@
 				73D4B87D1DCF0CA500FB7D01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73D4B87E1DCF0CA500FB7D01 /* Build configuration list for PBXNativeTarget "GradienterViewTests" */ = {
 			isa = XCConfigurationList;
@@ -394,6 +405,7 @@
 				73D4B8801DCF0CA500FB7D01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

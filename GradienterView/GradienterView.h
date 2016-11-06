@@ -1,19 +1,14 @@
 //
 //  GradienterView.h
-//  GradienterView
+//  S2iPhone
 //
-//  Created by Pai Peng on 06/11/2016.
-//  Copyright © 2016 Pai Peng. All rights reserved.
+//  Created by Pai Peng on 04/11/2016.
+//  Copyright © 2016 沈阳安创信息科技有限公司. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for GradienterView.
-FOUNDATION_EXPORT double GradienterViewVersionNumber;
+@interface GradienterView : UIView
 
-//! Project version string for GradienterView.
-FOUNDATION_EXPORT const unsigned char GradienterViewVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <GradienterView/PublicHeader.h>
-
-
+@property (nonatomic, assign) CGPoint point;
+@end
